@@ -30,7 +30,7 @@ const Ourservices = () => {
                         </div>
                     </div>)
                 })
-            }
+            }          
         </div>
     )
 
