@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody,ButtonGroup, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import avatar from '../image/avatar.png';
 
-export default function Login() {
-    const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+export default function Login(props) {
+    const [modal, setModal] = useState(props.login);
+    const toggle = () =>{
+        setModal(!modal);
+        props.setLogin(false);
+    } 
 
     return (
       
-            <Modal isOpen={toggle} toggle={toggle}>
+            <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>
                     <div style={{display:"flex",justifyContent:"center"}}><img src={avatar} style={{ width: "30%"}}></img></div>
                 </ModalHeader>
@@ -23,11 +26,12 @@ export default function Login() {
                     </Form>
                 </ModalBody>
                 <ModalFooter>
-                <Button color="success" style={{width:"100%"}} onClick={toggle}>Login</Button>{' '}
+                <ButtonGroup style={{width:"100%"}}>
+                <Button color="success" >Login</Button>
+                <Button color="danger"  onClick={toggle}>Cancel</Button>
+                </ButtonGroup>
                 </ModalFooter>
-                <ModalFooter>
-                    <Button color="secondary" onClick={toggle}>Cancel</Button>
-                </ModalFooter>
+                
             </Modal>
         
     )

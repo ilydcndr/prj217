@@ -2,12 +2,15 @@ import React,{ useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody,ButtonGroup , ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Signup from '../image/Signup.png'
 
-export default function SignUp() {
-    const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+export default function SignUp(props) {
+    const [modal, setModal] = useState(props.signup);
+    const toggle = () =>{
+        setModal(!modal);
+        props.setSignup(false);
+    } 
 
     return (       
-            <Modal isOpen={toggle} toggle={toggle}>
+            <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>
                     <div style={{display:"flex",justifyContent:"center"}}><img src={Signup} style={{ width: "30%"}}></img></div>
                 </ModalHeader>
@@ -26,7 +29,7 @@ export default function SignUp() {
                 </ModalBody>
                 <ModalFooter>
                 <ButtonGroup style={{width:"100%"}}>
-                <Button color="success" onClick={toggle}>Signup</Button>
+                <Button color="success" >Signup</Button>
                 <Button color="danger"  onClick={toggle}>Cancel</Button>
                 </ButtonGroup>
                 </ModalFooter>

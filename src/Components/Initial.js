@@ -29,8 +29,8 @@ const Initial = () => {
                 </Row>
                 <hr></hr>
             </Container>
-            {login=== true ? <Login/> : null }
-            {signup===true? <SignUp/>:null}
+            {login=== true ? <Login login={login} setLogin={setLogin}/> : null }
+            {signup===true? <SignUp signup={signup} setSignup={setSignup}/> :null}
             <Container>
                 <Row>
                     <Col className="navBar mt-2">
@@ -42,7 +42,6 @@ const Initial = () => {
                     </Col>
                 </Row>
             </Container>
-
             <div className="workPhoto">
                 <button className="InitialButtons">Bize Ulaşın</button>
             </div>
