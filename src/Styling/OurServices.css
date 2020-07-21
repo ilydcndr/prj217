@@ -1,0 +1,57 @@
+.servicesHeader{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.servicePhoto{
+    object-fit: contain;
+    width: 100%;
+}
+.servicePhotoFrame{
+    width: 35%;
+    height: 35%;
+    margin-top: 4%;
+}
+.divCentered{
+    display: flex;
+    justify-content: center;
+}
+.readServicesFrame{
+    border: 1px solid black;
+    width: 30%;
+    height: 40vh;
+    background-color: white;
+    margin-top: 5.8%;
+    margin-left: -4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.readServices{
+    width: 75%;
+    height: 35vh;
+}
+.readMore{
+    color:#250A48
+}
+.readMore:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.service{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+.service:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.calenderButton{
+    color: white ;
+    background-color: rgba(244, 132, 19, 1);
+    cursor: pointer;
+    padding: 2% 2%;
+    border: none;
+    
+}

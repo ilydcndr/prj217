@@ -1,0 +1,69 @@
+.contactUsHeader{
+    margin-top: 15%;
+    color: #f48413;
+    font-weight: normal;
+    font-size: xx-large;
+    text-align: center;   
+}
+.contactUs{
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #e8ebf4;
+    padding-bottom: 5%; 
+  
+}
+.contactUsDiv{
+    width: 50%;
+}
+.formDiv{
+    width: 50%;
+    margin-top: 5%;    
+}
+input ,select,textarea{
+    border: none;
+    border-bottom: 2px solid #250A48 ;
+    margin-top: 3%;
+    padding-top: 2.5%;
+    margin-left: 2%;
+    background-color:#e8ebf4 ;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+select{
+    font-size: unset !important;
+}
+input:hover{
+    border: 2px solid #250A48;
+}
+label{
+    margin-left: 2%;
+    margin-top: 5%;
+    text-align: center;
+    color: #250A48;
+    font-size: medium;
+}
+textarea{
+    width: 62%;
+    height: 10vh;   
+}
+.submitButton{
+    width: 65%;
+    margin-top: 5%;
+    background-color: #250A48;
+    color: white;
+    height: 8vh;
+    font-size: medium;
+}
+.errorStyle{
+    color:#f48413;
+    margin-top:1%
+}
+.contactDescription{
+    width: 80%;
+   margin: 0 auto;
+    text-align: center;
+    color:gray;
+}
