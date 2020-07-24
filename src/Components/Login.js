@@ -28,7 +28,7 @@ export default function Login(props) {
                 <ModalFooter>
                 <ButtonGroup style={{width:"100%"}}>
                 <Button color="success" >Login</Button>
-                <Button color="danger"  onClick={toggle}>Cancel</Button>
+                <Button color="danger" onClick={toggle}>Cancel</Button>
                 </ButtonGroup>
                 </ModalFooter>
                 

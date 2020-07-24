@@ -3,6 +3,8 @@ import "./../Styling/Initial.css";
 import { Row, Col, Container } from 'reactstrap';
 import Login from './Login';
 import SignUp from './SignUp';
+import { Link } from 'react-router-dom';
+
 
 const Initial = () => {
 
@@ -36,7 +38,11 @@ const Initial = () => {
                     <Col className="navBar mt-2">
                         {
                             menu.map((item, index) => {
-                                return <a href={index === 2 && "#Servisler" || index === 1 && "#BizeUlasın"} className="decoration">{item}&nbsp;&nbsp;&nbsp;</a>
+                                if(index!==3)
+                                return <a href={ index ===0 && "/"|| index === 2 && "#Servisler" || index === 1 && "#BizeUlasın" } className="decoration">{item}&nbsp;&nbsp;&nbsp;</a>
+                                else{
+                                return <Link to="/Planlama">{item}&nbsp;&nbsp;&nbsp;</Link>
+                                }                               
                             })
                         }
                     </Col>

@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody,ButtonGroup , ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Signup from '../image/Signup.png'
+import { Link } from 'react-router-dom';
 
 export default function SignUp(props) {
     const [modal, setModal] = useState(props.signup);
@@ -25,7 +26,7 @@ export default function SignUp(props) {
                             <Input type="password" name="Password" id="RepeatPassword" placeholder="with a placeholder"/>
                         </FormGroup>
                     </Form>
-                    <p>By creating an account you agree to our <a href="">Terms & Privacy.</a></p>
+                    <p>By creating an account you agree to our <Link to="/Agreement">Terms & Privacy.</Link></p>
                 </ModalBody>
                 <ModalFooter>
                 <ButtonGroup style={{width:"100%"}}>

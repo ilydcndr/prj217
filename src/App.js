@@ -1,27 +1,30 @@
 import React from 'react';
 import './App.css';
-import Initial from './Components/Initial';
-import Allabout from './Components/Allabout';
-import Ourservices from './Components/Ourservices';
-import ContactUs from './Components/ContactUs';
-import Footer from './Components/Footer';
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+import { Route, Switch } from "react-router-dom";
+import Planlama from './Components/Planlama';
+import HomePage from './Components/HomePage';
+import Agreement from './Components/Agreement';
 
 
 
 function App() {
   return (
-    <div>
-      <Initial/>
-      <Allabout/>
-      <Ourservices/>
-      <ContactUs/>
-      <Footer/>
-      {/* <Login/> */}
-      {/* <SignUp/> */}
-
-       
+    <div> 
+      <Switch>
+        <Route
+        exact path="/">
+         <HomePage/>
+        </Route>
+      <Route
+       exact path="/Planlama">
+         <Planlama/>
+      </Route>
+      <Route
+      exact path="/Agreement">
+        <Agreement/>
+      </Route>
+    </Switch>
+      
     </div>
   );
 }
