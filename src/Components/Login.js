@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody,ButtonGroup, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody,ButtonGroup, ModalFooter, Form, FormGroup, Label, Input} from 'reactstrap';
 import avatar from '../image/avatar.png';
 
 export default function Login(props) {
@@ -13,7 +13,7 @@ export default function Login(props) {
       
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>
-                    <div style={{display:"flex",justifyContent:"center"}}><img src={avatar} style={{ width: "30%"}}></img></div>
+                    <div style={{display:"flex",justifyContent:"center"}}><img alt="" src={avatar} style={{ width: "30%"}}></img></div>
                 </ModalHeader>
                 <ModalBody>
                     <Form>

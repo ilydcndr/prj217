@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody,ButtonGroup , ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody,ButtonGroup , ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 import Signup from '../image/Signup.png'
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ export default function SignUp(props) {
     return (       
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>
-                    <div style={{display:"flex",justifyContent:"center"}}><img src={Signup} style={{ width: "30%"}}></img></div>
+                    <div style={{display:"flex",justifyContent:"center"}}><img alt="" src={Signup} style={{ width: "30%"}}></img></div>
                 </ModalHeader>
                 <ModalBody>
                     <Form>

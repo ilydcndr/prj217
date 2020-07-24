@@ -9,7 +9,7 @@ const Allabout = () => {
             <div className="headerStyle">consectetuer adipiscing elit....</div>
             <div className="whyUsText"> Non etiam tempor id arcu magna ante eget. Nec per posuere cubilia cras porttitor condimentum
     orci suscipit. Leo maecenas in tristique</div>
-            <img className="workerPhoto" src={workerPhoto}></img>
+            <img alt="" className="workerPhoto" src={workerPhoto}></img>
         </div>
     )
 

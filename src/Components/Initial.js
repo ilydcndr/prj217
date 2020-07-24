@@ -39,7 +39,7 @@ const Initial = () => {
                         {
                             menu.map((item, index) => {
                                 if(index!==3)
-                                return <a href={ index ===0 && "/"|| index === 2 && "#Servisler" || index === 1 && "#BizeUlasın" } className="decoration">{item}&nbsp;&nbsp;&nbsp;</a>
+                                return <a href={( index ===0 && "/") ||( index === 2 && "#Servisler") || (index === 1 && "#BizeUlasın" )} className="decoration">{item}&nbsp;&nbsp;&nbsp;</a>
                                 else{
                                 return <Link to="/Planlama">{item}&nbsp;&nbsp;&nbsp;</Link>
                                 }                               

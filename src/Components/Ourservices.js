@@ -18,12 +18,12 @@ const Ourservices = () => {
                 photoSource.map((item, i) => {
                     return (<div className="divCentered">
                         <div className="servicePhotoFrame">
-                            <img src={item} className="servicePhoto"></img>
+                            <img alt="" src={item} className="servicePhoto"></img>
                         </div>
                         <div className="readServicesFrame">
                             <div className="readServices">
                                 <h2 className="service">{services[i]}</h2>
-                                <p><a href="" className="readMore">Ayrıntılı Bilgi</a></p>
+                                <p><a href="/" className="readMore">Ayrıntılı Bilgi</a></p>
                                 <hr></hr>
                                 <button className="calenderButton">Randevu Takvimi</button>
                             </div>
